@@ -6,7 +6,7 @@
  jobs:
    build:
      docker:
-       - image: circleci/openjdk:7-jdk
+       - image: circleci/openjdk:7
 
      steps:
        - checkout
