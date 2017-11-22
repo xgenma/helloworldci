@@ -1,3 +1,13 @@
-test:
-  override:
-    - echo Hello World
+version: 2
+jobs:
+  build:
+    docker:
+      - image: debian:stretch
+    steps:
+      - checkout
+      - run:
+          name: Greeting
+          command: echo Hello, world3.
+      - run:
+          name: Print the Current Time
+          command: date
