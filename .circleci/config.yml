@@ -30,8 +30,12 @@
            # fallback to using the latest cache if no exact match is found
            - v1-dependencies-
        # ant build
-       - ant -buildfile build.xml
+       #
+       #- run:
+       #    name: ant build
+       #    command: ant
 #       - run: mvn dependency:go-offline
+        - mvn antrun:run
 
 #       - save_cache:
 #           paths:
