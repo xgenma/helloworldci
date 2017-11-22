@@ -29,13 +29,8 @@
            - v1-dependencies-{{ checksum "pom.xml" }}
            # fallback to using the latest cache if no exact match is found
            - v1-dependencies-
-       # ant build
-       #
-       #- run:
-       #    name: ant build
-       #    command: ant
 #       - run: mvn dependency:go-offline
-        - run: mvn antrun:run
+        - run: mvn antrun
 
 #       - save_cache:
 #           paths:
