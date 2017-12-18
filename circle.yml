@@ -6,6 +6,12 @@ machine:
   java:
     version: openjdk7
 
-dependencies:
+test:
   override:
-    - echo hello world
+    - echo hello world test
+
+deployment:
+  deploy:
+    branch: develop
+    commands:
+      - echo deploy
