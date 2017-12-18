@@ -11,12 +11,12 @@ test:
     - echo hello world test
 
 #ƒLƒƒƒbƒVƒ…íœ
-dependencies:
-  post:
-    - rm -r ~/.gradle
+#dependencies:
+#  post:
+#    - rm -r ~/.gradle
 
 deployment:
   deploy:
     branch: develop
     commands:
-      - echo deploy
+      - ant
