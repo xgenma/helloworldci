@@ -16,6 +16,7 @@ public class Hello {
      */
     public static void main(String[] args) {
         System.out.println("he|oO0□四");
+        System.out.println("he|oO0□6");
     }
     
 }
